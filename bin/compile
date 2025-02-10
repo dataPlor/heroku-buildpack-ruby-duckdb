@@ -20,7 +20,7 @@ CACHE_DIR=$2
 ENV_DIR=$3
 LP_DIR=`cd $(dirname $0); cd ..; pwd`
 VENDOR_DIR="$BUILD_DIR/vendor"
-DUCKDB_VERSION="1.1.3"
+DUCKDB_VERSION="1.2.0"
 CACHE_FILE="$CACHE_DIR/duckdb-$DUCKDB_VERSION.tar.gz"
 DUCKDB_DIR="$BUILD_DIR/vendor/duckdb"
 echo "-----> Install Duckdb"
