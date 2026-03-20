@@ -27,10 +27,10 @@ else
 fi
 CACHE_FILE="$CACHE_DIR/duckdb-$DUCKDB_VERSION.tar.gz"
 DUCKDB_DIR="$BUILD_DIR/vendor/duckdb"
-echo "-----> Install Duckdb"
+echo "-----> Install Duckdb $DUCKDB_VERSION"
 
 if [ ! -f $CACHE_FILE ]; then
-  echo "[duckdb-buildpack] Installing DuckDB from source" | indent
+  echo "[duckdb-buildpack] Installing DuckDB $DUCKDB_VERSION from source" | indent
 
   mkdir -p $DUCKDB_DIR/lib
   mkdir -p $DUCKDB_DIR/include
